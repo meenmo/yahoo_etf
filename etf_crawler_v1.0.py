@@ -24,7 +24,7 @@ key = [
     ]
 
 while True:
-    ticker_list = input("Ticker를 입력하세요: ").upper().split(',')
+    ticker_list = input("Enter Your Tickers: ").upper().split(',')
     ticker_dic  = {}
 
     try:
@@ -96,7 +96,7 @@ while True:
             continue
 
     except (TypeError, ValueError, EOFError):
-        print("Ticker를 다시 입력해주세요", 'error')
+        print("Error! Enter Your Ticker Again: ")
         print('\n')
         pass
 
